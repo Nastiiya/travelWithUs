@@ -1,0 +1,15 @@
+.scroll-box {
+  &__arrow {
+    width: 15px;
+    height: 15px;
+    border-top: 5px solid $white-default;
+    border-right: 5px solid $white-default;
+    display: inline-block;
+
+    &--down{
+      transform: rotate(135deg);
+    }
+  }
+
+
+}

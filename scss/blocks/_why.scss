@@ -1,0 +1,76 @@
+.why{
+  background-image: url("../image/why-mobile.jpg");
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media($md){
+    background-image: url("../image/why-tablet.jpg");
+    height: 659px;
+  }
+
+  @include media($lg){
+    background-image: url("../image/why-desktop.jpg");
+    height: 705px;
+  }
+
+  @include media($full){
+    background-image: url("../image/why-full.jpg");
+  }
+
+  &__container{
+    padding-top: 60px;
+
+    @include media($lg){
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__images{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+
+    @include media($lg){
+      text-align: right;
+      display: block;
+    }
+  }
+
+  &__img{
+    width: 260px;
+
+    @include media($md){
+      width: 350px;
+    }
+      &--padding{
+        padding-right: 24px;
+
+        @media (min-width: $lg) and (max-width:$full ){
+            padding-right: 48px;
+            padding-bottom: 48px;
+        }
+
+        @media  (min-width: $full){
+          padding-right: 96px;
+          padding-bottom: 48px;
+        }
+      }
+  }
+
+  &__description{
+    text-align: center;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media($lg){
+      text-align: left;
+      align-items: unset;
+    }
+  }
+}

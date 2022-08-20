@@ -1,0 +1,40 @@
+.title{
+  font-family: $font-secondary;
+  font-size: $font-size-title;
+  text-transform: capitalize;
+  line-height: 40px;
+  font-weight: 400;
+
+  &--bottom-padding{
+    padding-bottom: 24px;
+  }
+}
+
+.subtitle{
+  font-family: $font-primary;
+  font-size: $font-size-subtitle;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-weight: 400;
+
+  &--regular{
+    text-transform: unset;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    padding-bottom: 16px;
+  }
+}
+
+.text{
+  font-family: $font-primary;
+  font-size: $font-size-body;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+
+  &--paddings{
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+

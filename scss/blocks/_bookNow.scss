@@ -1,0 +1,64 @@
+.bookNow{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  &--background-first{
+    background-image: url("../image/bookNow-mobile.jpg");
+    height: 615px;
+
+    @media (min-width:$md ) and (max-width:$lg){
+      background-image: url("../image/bookNow-tablet.jpg");
+      height: 588px;
+    }
+
+    @media (min-width: $lg) and (max-width:$full ){
+      background-image: url("../image/bookNow-desktop.jpg");
+      height: 712px;
+    }
+
+    @media  (min-width: $full){
+      background-image: url("../image/bookNow-full.jpg");
+      height: 712px;
+    }
+  }
+
+  &--background-second{
+    background-image: url("../image/bookNow_2-mobile.jpg");
+    height: 615px;
+
+    @media (min-width:$md ) and (max-width:$lg ){
+      background-image: url("../image/bookNow_2-tablet.jpg");
+      height: 588px;
+    }
+
+    @media (min-width: $lg) and (max-width:$full ){
+      background-image: url("../image/bookNow_2-desktop.jpg");
+      height: 712px;
+    }
+
+    @media  (min-width: $full){
+      background-image: url("../image/bookNow_2-full.jpg");
+      height: 712px;
+    }
+  }
+}
+
+.bookNow-box{
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+
+  @include media($lg){
+    width: 490px;
+    margin-top: 100px;
+  }
+
+  &__text{
+    padding-bottom: 28px;
+    padding-top: 16px;
+  }
+
+
+}
+

@@ -1,0 +1,18 @@
+.search-form {
+  width: 540px;
+  background-color: beige;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__input{
+    width: 100%;
+    border: none;
+    background: none;
+    font-family: $font-primary;
+    font-size: $font-size-nav;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    padding-left: 36px;
+  }
+}

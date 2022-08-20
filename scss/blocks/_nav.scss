@@ -1,0 +1,43 @@
+.nav{
+  &__list{
+    display: none;
+
+    @media (min-width: $md) and (max-width:$lg ){
+      display: flex;
+      gap: 40px;
+      padding-top: 32px;
+    }
+
+    @media (min-width: $lg) {
+      flex-direction: unset;
+      justify-content: space-between;
+      display: flex;
+      gap: 40px;
+    }
+
+  }
+
+  &__btn {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-left: 145px;
+    padding-right: 0;
+
+    @include media ($md){
+      display: none;
+    }
+  }
+
+  &__link{
+    text-transform: uppercase;
+    color: $white-default;
+    text-decoration: none;
+    font-family: $font-secondary;
+    font-size: $font-size-nav;
+    letter-spacing: 0.1em;
+
+  }
+
+}

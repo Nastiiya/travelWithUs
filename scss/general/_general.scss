@@ -1,0 +1,43 @@
+body{
+  width: 100%;
+  //max-width: $full;
+  min-width: $sm;
+}
+
+html{
+  font-size: $font-size-body;
+  color: $white-default;
+}
+
+.container {
+  width: 100%;
+  max-width: $full;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: $sm-padding;
+  padding-left: $sm-padding;
+
+  @include media($md){
+    padding-right: $md-padding;
+    padding-left: $md-padding;
+  }
+
+  @include media($lg){
+    padding-right: $lg-padding;
+    padding-left: $lg-padding;
+  }
+
+  @include media($full){
+    padding-right: $full-padding;
+    padding-left: $full-padding;
+  }
+
+  &--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.flex {
+  display: flex;
+}

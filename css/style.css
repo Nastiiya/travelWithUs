@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***********FONTS**********/
+/***********COLORS*********/
+/***********WIDTHS**********/
+/**********Breakpoints******/
+/**********Padding**********/
+body {
+  width: 100%;
+  min-width: 576px;
+}
+
+html {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+.container--reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav__list {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav__list {
+    display: flex;
+    gap: 40px;
+    padding-top: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__list {
+    flex-direction: unset;
+    justify-content: space-between;
+    display: flex;
+    gap: 40px;
+  }
+}
+.nav__btn {
+  display: block;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding-left: 145px;
+  padding-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav__btn {
+    display: none;
+  }
+}
+.nav__link {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.logo__link {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+.search-form {
+  width: 540px;
+  background-color: beige;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-form__input {
+  width: 100%;
+  border: none;
+  background: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  padding-left: 36px;
+}
+
+.scroll-box__arrow {
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #FFFFFF;
+  border-right: 5px solid #FFFFFF;
+  display: inline-block;
+}
+.scroll-box__arrow--down {
+  transform: rotate(135deg);
+}
+
+.why {
+  background-image: url("../image/why-mobile.jpg");
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .why {
+    background-image: url("../image/why-tablet.jpg");
+    height: 659px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .why {
+    background-image: url("../image/why-desktop.jpg");
+    height: 705px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .why {
+    background-image: url("../image/why-full.jpg");
+  }
+}
+.why__container {
+  padding-top: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .why__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+.why__images {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .why__images {
+    text-align: right;
+    display: block;
+  }
+}
+.why__img {
+  width: 260px;
+}
+@media screen and (min-width: 768px) {
+  .why__img {
+    width: 350px;
+  }
+}
+.why__img--padding {
+  padding-right: 24px;
+}
+@media (min-width: 1024px) and (max-width: 1360px) {
+  .why__img--padding {
+    padding-right: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1360px) {
+  .why__img--padding {
+    padding-right: 96px;
+    padding-bottom: 48px;
+  }
+}
+.why__description {
+  text-align: center;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .why__description {
+    text-align: left;
+    align-items: unset;
+  }
+}
+
+.bookNow {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.bookNow--background-first {
+  background-image: url("../image/bookNow-mobile.jpg");
+  height: 615px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bookNow--background-first {
+    background-image: url("../image/bookNow-tablet.jpg");
+    height: 588px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1360px) {
+  .bookNow--background-first {
+    background-image: url("../image/bookNow-desktop.jpg");
+    height: 712px;
+  }
+}
+@media (min-width: 1360px) {
+  .bookNow--background-first {
+    background-image: url("../image/bookNow-full.jpg");
+    height: 712px;
+  }
+}
+.bookNow--background-second {
+  background-image: url("../image/bookNow_2-mobile.jpg");
+  height: 615px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bookNow--background-second {
+    background-image: url("../image/bookNow_2-tablet.jpg");
+    height: 588px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1360px) {
+  .bookNow--background-second {
+    background-image: url("../image/bookNow_2-desktop.jpg");
+    height: 712px;
+  }
+}
+@media (min-width: 1360px) {
+  .bookNow--background-second {
+    background-image: url("../image/bookNow_2-full.jpg");
+    height: 712px;
+  }
+}
+
+.bookNow-box {
+  padding: 44px 32px;
+  background: rgba(35, 35, 35, 0.9);
+}
+@media screen and (min-width: 1024px) {
+  .bookNow-box {
+    width: 490px;
+    margin-top: 100px;
+  }
+}
+.bookNow-box__text {
+  padding-bottom: 28px;
+  padding-top: 16px;
+}
+
+header {
+  width: 100%;
+}
+
+.header-banner {
+  background-image: url("../image/mobile-header.jpg");
+  background-repeat: no-repeat;
+  height: 862px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .header-banner {
+    background-image: url("../image/tablet-header.jpg");
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header-banner {
+    background-image: url("../image/desktop-header.jpg");
+  }
+}
+@media screen and (min-width: 1360px) {
+  .header-banner {
+    background-image: url("../image/full-desktop-header.jpg");
+  }
+}
+.header-banner__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 52px;
+}
+.header-banner__subtitle {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+}
+
+.header-nav {
+  background-color: #5373FD;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav__box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-nav__box {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .header-nav__box {
+    justify-content: space-between;
+  }
+}
+
+.btn {
+  width: 213px;
+  height: 60px;
+  text-decoration: none;
+  background-color: #5373FD;
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  border: none;
+}
+.btn__text {
+  text-decoration: none;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.btn--narrow {
+  width: 139px;
+  height: 52px;
+  margin: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 40px;
+  font-weight: 400;
+}
+.title--bottom-padding {
+  padding-bottom: 24px;
+}
+
+.subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-weight: 400;
+}
+.subtitle--regular {
+  text-transform: unset;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding-bottom: 16px;
+}
+
+.text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+.text--paddings {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

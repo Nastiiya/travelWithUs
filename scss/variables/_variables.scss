@@ -1,0 +1,44 @@
+/***********FONTS**********/
+$font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Aleo', serif;
+$font-size-heading: 48px;
+$font-size-subheading: 22px;
+$font-size-title: 36px;
+$font-size-body: 16px;
+$font-size-subtitle: 20px;
+$font-size-logo: 24px;
+$font-size-nav: 14px;
+
+/***********COLORS*********/
+$primary: #5373FD;
+$secondary:  #333333;
+$white-default: #FFFFFF;
+$black-default: #000000;
+
+/***********WIDTHS**********/
+$width: 1360px;
+$content-width: 1140px;
+
+
+/**********Breakpoints******/
+$full: 1360px;
+$lg: 1024px;
+$lg-max: $full - 1;
+$md: 768px;
+$md-max: lg - 1;
+$sm: 576px;
+$sm-max:$md - 1;
+
+/**********Padding**********/
+$sm-padding: 18px;
+$md-padding: 24px;
+$lg-padding: 32px;
+$full-padding: 110px;
+
+
+
+
+
+
+
+

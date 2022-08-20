@@ -1,0 +1,25 @@
+@mixin media ($breakpoint){
+  @media screen and (min-width: $breakpoint){
+    @content;
+  }
+}
+
+@mixin bookNow_back ($back_img){
+  background-image: url($back_img);
+  height: 615px;
+
+  @media (min-width:$md ) and (max-width:$lg ){
+    background-image: url($back_img);
+    height: 588px;
+  }
+
+  @media (min-width: $lg) and (max-width:$full ){
+    background-image: url($back_img);
+    height: 712px;
+  }
+
+  @media  (min-width: $full){
+    background-image: url($back_img);
+    height: 712px;
+  }
+}
