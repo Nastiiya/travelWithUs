@@ -6,6 +6,9 @@
   font-family: $font-secondary;
   font-size: $font-size-body;
   border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
 
   &__text{
     text-decoration: none;
@@ -17,7 +20,7 @@
 
   }
   &--narrow{
-    width: 139px;
+    //width: 139px;
     height: 52px;
     margin: 4px;
     //margin-right: 4px;
@@ -26,9 +29,27 @@
     align-items: center;
     text-align: center;
   }
+  }
 
-  //&__icon{
-  //  width: 16px;
-  //  height: 16px;
-  //}
+.btn:hover{
+  background: #5373FD;
+  box-shadow: 0 2px 10px 5px #5373FD;
 }
+
+
+
+
+//.btn:after {
+//  content: "";
+//  background: #5373FD;
+//  display: block;
+//  position: absolute;
+//  padding-top: 300%;
+//  padding-left: 350%;
+//  margin-left: -20px !important;
+//  margin-top: -120%;
+//  opacity: 0;
+//  transition: all 0.8s
+//}
+
+//.btn:focus { outline:0; }

@@ -1,0 +1,27 @@
+.footer{
+  //width: 100%;
+  background-color: $black-default;
+  padding: 80px;
+  text-align: center;
+
+  &__title{
+    font-size: $font-size-logo;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__subtitle{
+    font-size: $font-size-nav;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+  }
+}
+
+.footer-media{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: $white-default;
+}
+

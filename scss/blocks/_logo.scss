@@ -1,4 +1,19 @@
 .logo{
+  width: 100%;
+  text-align: center;
+  padding-left: 35px;
+
+  @media (min-width: $md) and (max-width:$lg){
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $lg){
+    padding: 0;
+    width: unset;
+  }
+
+
+
   &__link{
     text-transform: uppercase;
     color: $white-default;

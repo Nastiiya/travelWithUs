@@ -2,27 +2,32 @@ header{
   width: 100%;
 }
 
-.header-banner{
-    background-image: url("../image/mobile-header.jpg");
-    background-repeat: no-repeat;
-    height: 862px;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
+.header-banner {
+  background-image: url("../image/mobile-header.jpg");
+  background-repeat: no-repeat;
+  height: 862px;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 
-  @include media($md){
+  @include media($md) {
     background-image: url("../image/tablet-header.jpg");
   }
 
-  @include media($lg){
+  @include media($lg) {
     background-image: url("../image/desktop-header.jpg");
   }
 
-  @include media($full){
+  @include media($full) {
     background-image: url("../image/full-desktop-header.jpg");
   }
+}
+
+.header-box{
+  margin-top: 180px;
 
   &__title{
     text-transform: uppercase;
@@ -39,24 +44,3 @@ header{
   }
 }
 
-.header-nav{
-  background-color: #5373FD;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  position: relative; 
-
-  &__box{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    @media (min-width: $md) and (max-width:$lg ){
-      flex-direction: column;
-
-    }
-    @media  (min-width: $lg) {
-      justify-content: space-between;
-    }
-}
-
-}

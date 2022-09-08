@@ -6,7 +6,11 @@
   font-weight: 400;
 
   &--bottom-padding{
-    padding-bottom: 24px;
+    padding-bottom: 10px;
+  }
+
+  &--center{
+    text-align: center;
   }
 }
 
@@ -31,10 +35,27 @@
   line-height: 28px;
   font-weight: 300;
   letter-spacing: 0.1em;
+  padding-top: 16px;
+  position: relative;
+
 
   &--paddings{
     padding-top: 30px;
     padding-bottom: 24px;
+  }
+
+  &--quote{
+    text-indent: 35px;
+  }
+
+  &--quote::before{
+    position: absolute;
+    content: "\201c";
+    top: 30px;
+    left: -42px;
+    font-size: 100px;
+    font-family: sans-serif;
+    color: #5373FD;
   }
 }
 

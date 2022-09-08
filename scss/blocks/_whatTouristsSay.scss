@@ -1,0 +1,69 @@
+.whatTouristsSay {
+  background-image: url("../image/whatSay-mobile.jpg");
+  height: 980px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  @include media($md){
+    background-image: url("../image/whatSay-tablet.jpg");
+    height: 924px;
+  }
+
+  @include media($lg){
+    background-image: url("../image/whatSay-desktop.jpg");
+    height: 736px;
+  }
+
+  @include media($full){
+    background-image: url("../image/whatSay-full.jpg");
+    height: 708px;
+  }
+
+
+
+  &__container{
+    padding-top: 60px;
+    padding-bottom: 120px;
+
+  }
+}
+
+.whatTouristsSay-box{
+  width: 100%;
+  margin-top: 60px;
+
+  @include media($lg){
+    display: flex;
+  }
+
+  &__img{
+    background-image: url("../image/whatSay-photo_mobile.jpg");
+    height: 336px;
+    //background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media($md){
+      background-image: url("../image/whatSay-photo_tablet.jpg");
+    }
+
+    @include media($lg){
+      background-image: url("../image/whatSay-photo_desktop.jpg");
+      width: 35%;
+    }
+
+    @include media($full){
+      background-image: url("../image/whatSay-photo_full.jpg");
+    }
+  }
+
+  &__description{
+    box-sizing: border-box;
+    padding: 48px 60px;
+    background: #333333;
+
+    @include media($lg){
+      width: 65%;
+    }
+  }
+}

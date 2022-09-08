@@ -1,11 +1,15 @@
 .scroll-box {
+  &__text{
+    font-size: $font-size-nav;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+  }
   &__arrow {
-    width: 15px;
-    height: 15px;
-    border-top: 5px solid $white-default;
-    border-right: 5px solid $white-default;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid $white-default;
+    border-right: 2px solid $white-default;
     display: inline-block;
-
     &--down{
       transform: rotate(135deg);
     }
