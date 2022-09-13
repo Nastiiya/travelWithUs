@@ -43,7 +43,8 @@ html{
   }
 }
 
-.flex {
-  display: flex;
+a{
+  text-transform: uppercase;
+  color: $white-default;
+  text-decoration: none;
 }
-

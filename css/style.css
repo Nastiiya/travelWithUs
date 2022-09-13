@@ -91,8 +91,10 @@ html {
   flex-direction: row-reverse;
 }
 
-.flex {
-  display: flex;
+a {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .logo {
@@ -112,9 +114,6 @@ html {
   }
 }
 .logo__link {
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-decoration: none;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
@@ -251,46 +250,46 @@ html {
   display: flex;
   align-items: center;
 }
-.bookNow--background-first {
+.bookNow--background-left {
   background-image: url("../image/bookNow-mobile.jpg");
   height: 615px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .bookNow--background-first {
+  .bookNow--background-left {
     background-image: url("../image/bookNow-tablet.jpg");
     height: 588px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1360px) {
-  .bookNow--background-first {
+  .bookNow--background-left {
     background-image: url("../image/bookNow-desktop.jpg");
     height: 712px;
   }
 }
 @media (min-width: 1360px) {
-  .bookNow--background-first {
+  .bookNow--background-left {
     background-image: url("../image/bookNow-full.jpg");
     height: 712px;
   }
 }
-.bookNow--background-second {
+.bookNow--background-right {
   background-image: url("../image/bookNow_2-mobile.jpg");
   height: 615px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .bookNow--background-second {
+  .bookNow--background-right {
     background-image: url("../image/bookNow_2-tablet.jpg");
     height: 588px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1360px) {
-  .bookNow--background-second {
+  .bookNow--background-right {
     background-image: url("../image/bookNow_2-desktop.jpg");
     height: 712px;
   }
 }
 @media (min-width: 1360px) {
-  .bookNow--background-second {
+  .bookNow--background-right {
     background-image: url("../image/bookNow_2-full.jpg");
     height: 712px;
   }
@@ -421,6 +420,11 @@ html {
 .menu__item {
   margin: 0 1rem;
   overflow: hidden;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #FFFFFF;
+  transition-duration: 0.4s;
 }
 
 .menu-button-container {
@@ -614,7 +618,35 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  color: #FFFFFF;
+  gap: 20px;
+}
+.footer-media__img {
+  fill: #FFFFFF;
+}
+
+.footer-media__img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.facebook:hover {
+  fill: #3b5998;
+}
+
+.twitter:hover {
+  fill: #00ACED;
+}
+
+.linkedin:hover {
+  fill: #0072b1;
+}
+
+.youtube:hover {
+  fill: #cd201f;
+}
+
+.pinterest:hover {
+  fill: #bd081c;
 }
 
 .btn {
@@ -647,7 +679,7 @@ header {
 
 .btn:hover {
   background: #5373FD;
-  box-shadow: 0 2px 10px 5px #5373FD;
+  transform: scale(1.04);
 }
 
 .title {

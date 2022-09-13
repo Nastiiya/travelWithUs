@@ -18,10 +18,41 @@
   }
 }
 
-.footer-media{
+.footer-media {
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  color: $white-default;
+  gap: 20px;
+
+  &__img{
+    fill: $white-default;
+  }
 }
+
+.footer-media__img:hover{
+    transform: scale(1.2);
+    transition: transform 0.50s;
+}
+
+.facebook:hover{
+  fill: #3b5998;
+}
+
+.twitter:hover{
+  fill: #00ACED;
+}
+
+.linkedin:hover{
+  fill: #0072b1
+}
+
+.youtube:hover{
+  fill: #cd201f;
+}
+
+.pinterest:hover{
+  fill: #bd081c;
+}
+
+
 

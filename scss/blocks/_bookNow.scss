@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  &--background-first{
+  &--background-left{
     background-image: url("../image/bookNow-mobile.jpg");
     height: 615px;
 
@@ -24,7 +24,7 @@
     }
   }
 
-  &--background-second{
+  &--background-right{
     background-image: url("../image/bookNow_2-mobile.jpg");
     height: 615px;
 
